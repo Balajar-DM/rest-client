@@ -12,6 +12,7 @@ class Siswa extends CI_Controller
     {
         $data = [
             'siswa' => $this->M_app->get_siswa(),
+            //'siswa' => $this->M_app->detail_siswa('18'),
         ];
         $this->load->view('V_siswa', $data);
     }

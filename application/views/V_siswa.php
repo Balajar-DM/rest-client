@@ -66,13 +66,15 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($siswa as $row) : ?>
+                <?php
+                foreach ($siswa->data as $row) : ?>
                     <tr>
                         <td align="center"><?= $row->nisn; ?></td>
                         <td><?= $row->nama; ?></td>
                         <td align="center"><?= $row->jk_siswa; ?></td>
                     </tr>
-                <?php endforeach; ?>
+                <?php endforeach;
+                ?>
             </tbody>
         </table>
     </div>
